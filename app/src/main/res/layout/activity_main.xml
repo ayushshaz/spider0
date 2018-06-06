@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/base"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anurag.spider0.MainActivity"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Amount You Have To Pay Is-"
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="Random Number="
+            android:layout_height="wrap_content"
+            android:id="@+id/random"
+
+            />
+
+        <TextView
+            android:layout_marginTop="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Paid=0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+
+            android:layout_gravity="center"
+            android:textColor="@android:color/holo_blue_dark"
+            android:id="@+id/payment"
+
+            />
+
+    </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal">
+     <Button
+         android:id="@+id/onerupee"
+         android:text="One Rupee"
+         android:textAllCaps="false"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_weight="1"
+         android:layout_alignParentBottom="true"
+         android:onClick="onerupee"
+
+         />
+
+
+    <Button
+        android:id="@+id/tworupee"
+        android:text="Two Rupee"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/onerupee"
+        android:textAllCaps="false"
+        android:onClick="tworupee"
+
+        />
+
+    <Button
+        android:id="@+id/fiverupee"
+        android:text="Five Rupee"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:layout_toRightOf="@id/tworupee"
+        android:onClick="fiverupee"
+        />
+
+    <Button
+        android:id="@+id/tenrupee"
+        android:text="Ten Rupee"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/fiverupee"
+        android:textAllCaps="false"
+        android:onClick="tenrupee"
+        />
+</LinearLayout>
+
+</RelativeLayout>
